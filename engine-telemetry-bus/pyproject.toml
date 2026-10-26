@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "engine-telemetry-bus"
+version = "0.1.0"
+description = "Virtual subnet addressing, a strict state registry, and pre-execution safety gates (GI_1-GI_3) for AI-driven engine and filesystem operations."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+subnetbus = "subnetbus.__main__:main"
+
+[tool.setuptools]
+packages = ["subnetbus"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]
