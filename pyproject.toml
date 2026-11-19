@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Virtual subnet addressing, a strict state registry, and pre-execution safety gates (GI_1-GI_3) for AI-driven engine and filesystem operations."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = { text = "AGPL-3.0-or-later" }
 dependencies = []
 
 [project.optional-dependencies]
